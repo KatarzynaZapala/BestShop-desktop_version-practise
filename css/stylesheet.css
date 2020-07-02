@@ -18,14 +18,17 @@ img video canvas {
 }
 
 header{
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 
 }
 
-container{
+.container{
     width: 1626px;
+    display: flex;
+
 
 }
 
@@ -78,3 +81,70 @@ nav.container{
 /*koniec navy*/
 
 /*początek baneru*/
+
+.banner{
+    width: 1626px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.banner div.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_slogan{
+    font-family: var(--primary-font-family);
+    font-size: 49px;
+    padding: 150px 0 40px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.banner_info{
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    /*padding: 200px 0 40px 0;*/
+    text-align: center;
+
+}
+
+.banner_buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+    height: 67px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color:white;
+    margin-top: 40px;
+    font-family: var(--second-font-family);
+    font-size: 16px;
+
+}
+
+.banner_buttom:hover {
+    background-color: orange;
+    cursor: grab;
+}
+.section_image {
+    width: 1626px;
+    height: 500px;
+    background-image: url("../assets/Background.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: 30px;
+
+}
+
+
+
