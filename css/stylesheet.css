@@ -1,5 +1,7 @@
 :root{
     --primary-color:#08A6E4;
+    --socond-color: #FB3B64;
+    --third-color: #55DFB4;
     --base-font-size:10px;
     --primary-font-family:'Raleway', sans-serif;
     --second-font-family:'Open Sans', sans-serif;
@@ -17,6 +19,7 @@ img video canvas {
     width: 100%;
 }
 
+
 header{
     /*width: 100%;*/
     display: flex;
@@ -33,7 +36,7 @@ header{
 }
 
 nav.container{
-    width: 1626px;
+    width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -71,20 +74,21 @@ nav.container{
     transition: 1s;
 
 }
-
+/*todo :: nie działa border-bottom
+   todo:: nie odnosi do id*/
 .nav_list li:hover{
     color: black;
     /*border-bottom: 3px solid #08A6E4;*/
     cursor: grab;
 }
 
-/*koniec navy*/
+/*end navy*/
 
-/*początek baneru*/
+/*start banner*/
 
 .banner{
     width: 1626px;
-    height: 900px;
+    height: 594px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +149,117 @@ nav.container{
     bottom: 30px;
 
 }
+
+/*end banner*/
+
+/*start statistic*/
+
+
+
+.statistic div.container{
+    width: 1626px;
+    height: 513px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.statistic_slogan h2{
+    display: inline-block;
+    width: 714px;
+    font-family: var(--primary-font-family);
+    font-size: 32px;
+    opacity: 1;
+}
+
+.icon{
+    width: 1000px;
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.icon_content{
+    width: 116px;
+    height: 140px;
+
+}
+
+.circle{
+    width: 63px;
+    height: 63px;
+    border-radius: var(--base-border-radius);
+    border: 1px solid gray
+}
+.red{
+}
+
+.circle_red{
+    background-color: var(--socond-color);
+}
+.circle_blue{
+    background-color: var(--primary-color);
+}
+.circle_green{
+    background-color: var(--third-color);
+}
+
+
+.icon_img{
+    position: relative;
+    bottom: 55px;
+    left: 30px;
+}
+
+div.icon_content+div.icon_content img{
+    position: relative;
+    bottom: 50px;
+    left: 30px;
+    margin-bottom: 17px;
+}
+/*todo :: poniżej jest stylowanie do trzeciej ikony, które jest identyczne jak do pierwszej, obie są w tych samych kontenerach o takich samych właściwościach, jednak jak zakomentuję to stylowanie to ikona się przesuwa?*/
+div.icon_content+div.icon_content+div.icon_content img{
+    position: relative;
+    bottom: 55px;
+    left: 30px;
+    margin-bottom: 4px;
+}
+
+h5{
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: -10px;
+    margin-top: -10px;
+    letter-spacing: 6px;
+}
+.icon_content p{
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    text-align: center;
+    color: #A5A5A5;
+    padding-top: 30px;
+    margin-left: -20px;
+    margin-top: -10px;
+
+}
+
+/*end section statistic*/
+
+/*start main bennefits*/
+
+
+
+
+
+
+
 
 
 
