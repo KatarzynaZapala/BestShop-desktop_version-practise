@@ -256,28 +256,36 @@
             <h2 class="contact_slogan">Any questioned?</h2>
             <p class="contact_ask">Leave your email address or call us!</p>
             <div class="contact_data">
-                <p>info@bestshop.pl</p>
-                <p>123 456 789</p>
+                <a href="mailto:info@bestshop.xyz" class="email">
+                    <img src="assets/Mail%20Icon.svg" alt="email">info@bestshop.xyz
+                </a>
+                <a href="tel:123456789" class="phone">
+                    <img src="assets/Phone%20Icon.svg" alt="phone">123 456 789
+                </a>
             </div>
         </div>
 
         <div class="contact_input">
-            <div class="contact_form">
-                <p>Wisz imię</p>
-                <input type="text">
-                <p>Wpisz nazwisko</p>
-                <input type="text">
-            </div>
-        </div>
-        <div class="contact_declaration">
-            
+            <form class="contact_form">
+                <div class="contact_details">
+                <div class="contact_details">
+                    <label for="name" class="contact_label">Name</label>
+                    <input type="text" class="contact_input" id="name">
+                </div>
+                <div class="contact_details">
+                    <label for="email" class="contact_label">E-mail</label>
+                    <input type="e-mail" class="contact_input" id="email">
+                </div>
+                <div class="contact_declaration">
+                    <label class="declaration_checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox"></span>
+                        <p class="declaration_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto asperiores corporis delectus magni quia sapiente sit totam? Corporis, culpa deleniti dolor laudantium natus velit vitae! Cum, numquam tempora? Magni.</p>
+                    </label>
+                </div>
+            </form>
         </div>
     </div>
-
-
-    </div>
-
-
 </section>
 
 
