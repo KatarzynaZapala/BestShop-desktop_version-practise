@@ -1,1 +1,1 @@
-# BestShop-only-desktop-bootcamp-workshop
+# BestShop desktop version of simple website - practicing
