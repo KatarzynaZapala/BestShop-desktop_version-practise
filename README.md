@@ -1,1 +1,1 @@
-# BestShop desktop version of simple website - practicing
+# Shop - desktop version of simple website - practicing
